@@ -43,12 +43,12 @@ header {
 
 .main-info {
   display: flex;
-  justify-content: center;
-  margin-top: 200px;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 50%;
 }
 
 .price {
-  position: absolute;
   font-size: 1rem;
   text-align: center;
   padding-top: 45px;
@@ -58,8 +58,12 @@ header {
   border-radius: 50%;
   width: 180px;
   height: 180px;
-  margin-top: 300px;
-  margin-left: 60px;
+}
+
+.hidden-element {
+  visibility: hidden;
+  width: 180px;
+  height: 180px;
 }
 
 .price strong {
@@ -75,7 +79,6 @@ header {
   filter: brightness(1.75);
   color: white;
   padding: 20px 40px;
-  margin-top: 200px;
 }
 
 /* Formulario en el footer */
@@ -351,6 +354,9 @@ h2 {
     width: 100px;
     transform: translateY(-80px) translateX(-20px);
   }
+  .main-info {
+    height: 70%;
+  }
   .price {
     font-size: .8rem;
     width: 140px;
@@ -362,12 +368,14 @@ h2 {
     font-size: 1rem;
     font-weight: normal;
   }
+  .hidden-element {
+    display: none;
+  }
   .description {
     font-size: 1.5rem;
     letter-spacing: 1px;
     padding: 20px 40px;
-    margin-top: 125px;
-    margin-left: 180px;
+    margin-left: 20px;
   }
   .banner {
     position: relative;
@@ -384,6 +392,17 @@ h2 {
     font-weight: bold;
     width: 160px;
     margin:40px;
+  }
+  .banner:before,
+  .banner:after,
+  .banner > :last-child:before,
+  .banner > :last-child:after {
+    position: absolute;
+    width: 140px;
+    height: 70px;
+    border-color: #c41613;
+    border-style: solid;
+    content: " ";
   }
   .banner:before {
     border-width: 6px 0 0 6px;
