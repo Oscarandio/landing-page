@@ -45,7 +45,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  height: 50%;
+  height: 45%;
 }
 
 .price {
@@ -58,6 +58,7 @@ header {
   border-radius: 50%;
   width: 180px;
   height: 180px;
+  margin-left: 30px;
 }
 
 .hidden-element {
@@ -89,41 +90,51 @@ footer {
   background-color: hsla(0, 0%, 0%, 0.8);
   position: absolute;
   bottom: 0;
-  width: 100%;
   height: 120px;
   color: white;
-}
-
-.footer-info {
-  font-size: 2rem;
-  font-style: italic;
-  text-align: right;
-  margin: 0 80px;
+  width: 100%;
 }
 
 form {
   display: flex;
+  justify-content: space-around;
+  margin: 0 20px;
   width: 100%;
+}
+.info {
+  font-size: 2.1rem;
+  font-style: italic;
+  text-align: right;
+  padding-right: 80px;
+  width: 20%;
 }
 
 .form-wrapper {
+  width: 70%;
+}
+
+.form-container {
   width: 100%;
 }
 
-#nombre {
+.button {
+  width: 100%;
+}
+
+#name {
   width: 30%;
 }
 
 #email {
-  width: 40%;
+  width: 35%;
 }
 
 #tel {
-  width: 16%;
+  width: 20%;
 }
 
-#mensaje {
-  width: 20%;
+#message {
+  width: 88.2%;
 }
 
 input {
@@ -139,8 +150,19 @@ input::placeholder {
   padding-left: 6px;
 }
 
-#mensaje {
-  width: 100%;
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 0.6rem;
+  margin-top: -12px;
+}
+
+button {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 10px 31px;
+  margin-left: 8px;
+  margin-right: 80px;
 }
 
 /* Segunda página (Banner y detalles de la promoción) */
@@ -355,10 +377,10 @@ h2 {
     transform: translateY(-80px) translateX(-20px);
   }
   .main-info {
-    height: 70%;
+    height: 25%;
   }
   .price {
-    font-size: .8rem;
+    font-size: 0.8rem;
     width: 140px;
     height: 140px;
     margin-left: 20px;
@@ -377,6 +399,51 @@ h2 {
     padding: 20px 40px;
     margin-left: 20px;
   }
+  footer {
+    display: inline;
+    height: 400px;
+    padding: 0 10px;
+  }
+  form {
+    display: inline;
+    width: 100%;
+  }
+  .info {
+    font-size: 2rem;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  .form-container {
+    width: 96%;
+  }
+  .button {
+    width: 100%;
+  }
+  #name {
+    width: 100%;
+  }
+  #email {
+    width: 100%;
+  }
+  #tel {
+    width: 100%;
+  }
+  #message {
+    width: 100%;
+  }
+  input {
+    background-color: hsla(0, 0%, 24%, 0.8);
+    border: none;
+    height: 38px;
+    margin: 8px 8px;
+  }
+  button {
+    font-size: 1rem;
+  }
   .banner {
     position: relative;
     display: flex;
@@ -386,12 +453,11 @@ h2 {
   .banner img {
     width: 100%;
   }
-  
   .banner p {
     font-size: 0.8rem;
     font-weight: bold;
     width: 160px;
-    margin:40px;
+    margin: 40px;
   }
   .banner:before,
   .banner:after,
@@ -415,7 +481,6 @@ h2 {
     margin-left: -25px;
     margin-bottom: 10px;
   }
-  
   .promotion-details__container img {
     margin-left: 0px;
     width: 60px;
@@ -426,10 +491,10 @@ h2 {
     width: 100%;
   }
   .container-slider:before {
-    border-width: 6px 0 0 6px;
+    border-width: 0px 0 0 0px;
   }
   .container-slider > :nth-child(1):before {
     bottom: 70px;
-    border-width: 0 6px 6px 0;
+    border-width: 0 0px 0px 0;
   }
 }
