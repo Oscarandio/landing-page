@@ -1,0 +1,7 @@
+/* Variables para su reutilización */
+:root {
+    --black: 0, 0%, 0%;
+    --white: 0, 100%, 100%;
+    --dark-red: 355, 100%, 23%;
+    --light-red: #c41613;
+  }

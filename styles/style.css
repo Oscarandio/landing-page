@@ -1,0 +1,266 @@
+@import url("variables.css");
+@import url("form.css");
+@import url("slider.css");
+@import url("banner-borders.css");
+@import url("slider-borders.css");
+/* Propiedades generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Tipografía */
+body {
+  font-family: Roboto, sans-serif;
+  overflow-x: hidden;
+}
+/*
+* 01.Página principal 
+* -------------------------------
+*/
+  /* Imágen de fondo */
+.container {
+  background-image: url("../assets/cabecera.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: content;
+  height: 100vh;
+}
+  /* Caja con el logotipo */
+.logo-container {
+  background-color: hsl(var(--black));
+  transform-origin: right;
+  transform: translateX(-16px) translateY(-10px) rotate(12deg);
+  height: 180px;
+}
+header {
+  display: flex;
+  justify-content: end;
+}
+.logo {
+  width: 260px;
+  transform: translateY(-170px) translateX(-30px);
+}
+/* Detalles de la portada */
+.main-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 45%;
+}
+  /* Banner circular con el precio */
+.price {
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 45px;
+  transform: rotate(-12deg);
+  color: hsl(var(--white));
+  background-color: var(--light-red);
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin-left: 30px;
+}
+.price strong {
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+.hidden-element {
+  visibility: hidden;
+  width: 180px;
+  height: 180px;
+}
+  /* Banner rectangular */
+.description {
+  font-size: 2.4rem;
+  font-style: italic;
+  letter-spacing: 1px;
+  background-color: hsl(var(--dark-red), 0.8);
+  filter: brightness(1.75);
+  color: hsl(var(--white));
+  padding: 20px 40px;
+}
+/* 
+* 02.Segunda página (Banner y detalles de la promoción) 
+* -------------------------------------------------------
+*/
+.banner-container {
+  display: flex;
+  justify-content: center;
+}
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 80px 240px;
+}
+.banner img {
+  width: 200px;
+}
+.banner p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: 160px;
+  margin: 20px 40px 60px 40px;
+}
+  /* Detalles de la promoción */
+h2 {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.promotion-details__container {
+  display: flex;
+  justify-content: center;
+}
+.promotion-details__container p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.promotion-details__container img {
+  position: relative;
+  margin-left: 40px;
+  width: 90px;
+  margin-right: 20px;
+  z-index: 1;
+}
+.promotion-picture {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translateY(-120px);
+}
+/* 
+* Responsive Design
+*-------------------------------
+*/
+@media (max-width: 1200px) {
+  .logo-container {
+    background-color: #000;
+    transform-origin: right;
+    transform: translateX(-6px) translateY(-10px) rotate(12deg);
+    height: 80px;
+  }
+  .logo {
+    width: 100px;
+    transform: translateY(-80px) translateX(-20px);
+  }
+  .main-info {
+    height: 25%;
+  }
+  .price {
+    font-size: 0.8rem;
+    width: 140px;
+    height: 140px;
+    margin-left: 20px;
+    padding-top: 35px;
+  }
+  .price strong {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  .hidden-element {
+    display: none;
+  }
+  .description {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding: 20px 40px;
+    margin-left: 20px;
+  }
+  footer {
+    display: inline;
+    height: 360px;
+    padding: 0 10px;
+  }
+  form {
+    display: inline;
+    width: 100%;
+  }
+  .info {
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 8px;
+    margin-left: 8px;
+  }
+  .form-wrapper,
+  .button,
+  #name,
+  #email,
+  #tel,
+  #message {
+    width: 100%;
+  }
+  .form-container {
+    width: 96%;
+  }
+  input {
+    border: none;
+    height: 38px;
+    margin: 8px 8px;
+  }
+  button {
+    font-size: 1rem;
+    width: 96%;
+  }
+  .banner {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px;
+  }
+  .banner img {
+    width: 100%;
+  }
+  .banner p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 160px;
+    margin: 40px;
+  }
+  .banner:before,
+  .banner:after,
+  .banner > :last-child:before,
+  .banner > :last-child:after {
+    position: absolute;
+    width: 140px;
+    height: 70px;
+    border-style: solid;
+    content: " ";
+  }
+  .banner:before {
+    border-width: 6px 0 0 6px;
+  }
+  .banner > :last-child:before {
+    border-width: 0 6px 6px 0;
+  }
+  .promotion-details__container p {
+    font-size: 0.6rem;
+    margin-left: -25px;
+    margin-bottom: 10px;
+  }
+  .promotion-details__container img {
+    margin-left: 0px;
+    width: 60px;
+    margin-bottom: 40px;
+  }
+  .container-slider {
+    margin: 0;
+    width: 100%;
+  }
+  .container-slider:before {
+    border-width: 0px 0 0 0px;
+  }
+  .container-slider > :nth-child(1):before {
+    bottom: 70px;
+    border-width: 0 0px 0px 0;
+  }
+}

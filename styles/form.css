@@ -1,0 +1,100 @@
+/* Formulario en el footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: hsla(var(--black), 0.8);
+    position: absolute;
+    bottom: 0;
+    height: 120px;
+    color: hsl(var(--white));
+    width: 100%;
+  }
+  form {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+    width: 100%;
+  }
+  .info {
+    font-size: 2.1rem;
+    font-style: italic;
+    text-align: right;
+    padding-right: 100px;
+    width: 20%;
+  }
+  .form-wrapper {
+    width: 70%;
+  }
+  .form-container,
+  .button {
+    width: 100%;
+  }
+  #name {
+    width: 30%;
+  }
+  #email {
+    width: 35%;
+  }
+  #tel {
+    width: 20%;
+  }
+  #message {
+    width: 88.2%;
+  }
+  input {
+    background-color: hsla(0, 0%, 24%, 0.8);
+    border: none;
+    height: 32px;
+    margin: 4px 8px;
+    font-size: 0.8rem;
+    color: hsl(var(--white));
+    padding-left: 6px;
+  }
+  input::placeholder {
+    font-size: 0.8rem;
+    color: hsl(var(--white));
+    padding-left: 6px;
+  }
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 0.6rem;
+    margin-top: -12px;
+  }
+  button {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 31px;
+    margin-left: 8px;
+    margin-right: 80px;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: green;
+    color: hsl(var(--white));
+  }
+
+  /* Customize the label (the container) */
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}

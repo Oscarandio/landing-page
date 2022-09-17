@@ -1,0 +1,32 @@
+  /* Bordes del banner */
+  .banner:before,
+  .banner:after,
+  .banner > :last-child:before,
+  .banner > :last-child:after {
+    position: absolute;
+    width: 270px;
+    height: 100px;
+    border-color: var(--light-red);
+    border-style: solid;
+    content: " ";
+  }
+  .banner:before {
+    top: 0;
+    left: 0;
+    border-width: 12px 0 0 12px;
+  }
+  .banner:after {
+    top: 0;
+    right: 0;
+    border-width: 0;
+  }
+  .banner > :last-child:before {
+    bottom: 0;
+    right: 0;
+    border-width: 0 12px 12px 0;
+  }
+  .banner > :last-child:after {
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 0 0;
+  }

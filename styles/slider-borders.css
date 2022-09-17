@@ -1,0 +1,32 @@
+  /* Bordes del slider */
+  .container-slider:before,
+  .container-slider:after,
+  .container-slider > :nth-child(1):before,
+  .container-slider > :nth-child(1):after {
+    position: absolute;
+    width: 270px;
+    height: 100px;
+    border-color: var(--light-red);
+    border-style: solid;
+    content: " ";
+  }
+  .container-slider:before {
+    top: 0;
+    left: 0;
+    border-width: 12px 0 0 12px;
+  }
+  .container-slider:after {
+    top: 0;
+    right: 0;
+    border-width: 0;
+  }
+  .container-slider > :nth-child(1):before {
+    bottom: 136px;
+    right: 0;
+    border-width: 0 12px 12px 0;
+  }
+  .container-slider > :nth-child(1):after {
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 0 0;
+  }
