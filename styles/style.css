@@ -21,11 +21,11 @@ body {
   /* Imágen de fondo */
 .container {
   background-image: url("../assets/cabecera.jpg");
-  max-width: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: content;
-  height: 100vh;
+  max-height: 100vh;
 }
   /* Caja con el logotipo */
 .logo-container {
@@ -179,7 +179,7 @@ h2 {
     display: inline-block;
     position: absolute;
     bottom: 0;
-    max-height: 320px;
+    height: 320px;
     padding: 10px;
 
   }
