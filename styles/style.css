@@ -21,7 +21,7 @@ body {
   /* Imágen de fondo */
 .container {
   background-image: url("../assets/cabecera.jpg");
-  width: 100%;
+  max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: content;
@@ -179,7 +179,7 @@ h2 {
     display: inline-block;
     position: absolute;
     bottom: 0;
-    height: 320px;
+    max-height: 320px;
     padding: 10px;
 
   }
