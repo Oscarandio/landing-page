@@ -28,7 +28,7 @@ footer {
   }
   .form-container,
   .button {
-    width: 100%;
+    max-width: 100%;
   }
   #name {
     width: 30%;
