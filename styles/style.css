@@ -142,7 +142,7 @@ h2 {
 * Responsive Design
 *-------------------------------
 */
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .logo-container {
     background-color: #000;
     transform-origin: right;
