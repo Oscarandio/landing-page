@@ -13,6 +13,7 @@
 body {
   font-family: Roboto, sans-serif;
   overflow-x: hidden;
+  max-width: 100%;
 }
 /*
 * 01.Página principal 
@@ -135,7 +136,7 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  transform: translateY(-120px);
+  transform: translateY(-121px);
 }
 /* 
 * Responsive Design
