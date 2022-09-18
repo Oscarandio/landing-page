@@ -176,12 +176,10 @@ h2 {
     margin-left: 20px;
   }
   footer {
-    display: inline;
     height: 360px;
-    padding: 0 10px;
   }
   form {
-    display: inline;
+    display: inline-block;
     width: 100%;
   }
   .info {
